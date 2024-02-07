@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "DogTreadmillCounter",
-    "slug": "DogTreadmillCounter",
+    "slug": "dog-walking-logger",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.callhimkev.dogwalkinglogger"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eeadb9df-b1d7-494d-9c18-0e5f3121b742"
+      }
+    },
+    "owner": "callhimkev"
   }
 }
