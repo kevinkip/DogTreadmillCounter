@@ -173,12 +173,12 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.buttonText}>View Logged Data</Text>
       </Pressable>
 
-      <Pressable
+      {/* <Pressable
         style={[styles.logButton, { marginTop: 10 }]} // Reuse logButton styles with additional top margin
         onPress={clearAsyncStorage}
       >
         <Text style={styles.buttonText}>Clear Data</Text>
-      </Pressable>
+      </Pressable> */}
     </ScrollView>
   );
 };

@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#e2f2f4"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,7 +20,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#e2f2f4"
       },
       "package": "com.callhimkev.dogwalkinglogger"
     },
@@ -32,6 +32,12 @@
         "projectId": "eeadb9df-b1d7-494d-9c18-0e5f3121b742"
       }
     },
-    "owner": "callhimkev"
+    "owner": "callhimkev",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/eeadb9df-b1d7-494d-9c18-0e5f3121b742"
+    }
   }
 }
