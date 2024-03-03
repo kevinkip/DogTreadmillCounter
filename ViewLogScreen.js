@@ -13,12 +13,25 @@ const ViewLogScreen = () => {
     setLogs(logs);
   };
 
+  const exportData = async () => {
+    try {
+      const logsString = JSON.stringify(logs, null, 2);
+      const path = RNFS.DocumentDirectoryPath + '/logs-export.json';
+
+      await RNFS.writeFile(path, logsString, 'utf8');
+      console.log('Data exported successfully. Path:', path);
+    } catch (error) {
+      console.error('Error exporting data:', error);
+    }
+  };
+
   useEffect(() => {
     fetchLogs();
   }, []);
 
   return (
     <ScrollView style={styles.container}>
+      <Button title="Export Data" onPress={exportData} />
       {logs.map((log, index) => (
         <View key={index} style={styles.logItem}>
           <Text>Dog: {log.selectedDog}</Text>
